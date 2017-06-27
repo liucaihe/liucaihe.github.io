@@ -1,0 +1,1146 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+  
+
+
+  <link rel="alternate" href="/atom.xml" title="LiuCaiHe's Notes" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 特性超快速度Node.js 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染。 支持 MarkdownHexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。 一键部署只需一条">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo 常用命令">
+<meta property="og:url" content="http://liucaihe.github.io/20170627/hexo-command/index.html">
+<meta property="og:site_name" content="LiuCaiHe&#39;s Notes">
+<meta property="og:description" content="Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 特性超快速度Node.js 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染。 支持 MarkdownHexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。 一键部署只需一条">
+<meta property="og:updated_time" content="2017-06-27T12:24:26.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hexo 常用命令">
+<meta name="twitter:description" content="Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 特性超快速度Node.js 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染。 支持 MarkdownHexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。 一键部署只需一条">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://liucaihe.github.io/20170627/hexo-command/"/>
+
+
+
+
+
+  <title>hexo 常用命令 | LiuCaiHe's Notes</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">LiuCaiHe's Notes</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">生命不息, 折腾不止</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://liucaihe.github.io/20170627/hexo-command/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CaiHe Liu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/HGEF3802.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LiuCaiHe's Notes">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">hexo 常用命令</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-27T18:07:27+08:00">
+                2017-06-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><code>Hexo</code> 是一个快速、简洁且高效的博客框架。<code>Hexo</code> 使用 <code>Markdown</code>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><p><strong>超快速度</strong><br><code>Node.js</code> 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染。</p>
+<p><strong>支持 Markdown</strong><br><code>Hexo</code> 支持 <code>GitHub</code> <code>Flavored</code> <code>Markdown</code> 的所有功能，甚至可以整合 <code>Octopress</code> 的大多数插件。</p>
+<p><strong>一键部署</strong><br>只需一条指令即可部署到 <code>GitHub Pages</code>, <code>Heroku</code> 或其他网站。</p>
+<p><strong>丰富的插件</strong><br><code>Hexo</code> 拥有强大的插件系统，安装插件可以让 <code>Hexo</code> 支持 <code>Jade</code>, <code>CoffeeScript</code>。</p>
+<a id="more"></a>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="安装前必备"><a href="#安装前必备" class="headerlink" title="安装前必备"></a>安装前必备</h3><p>安装 <code>Hexo</code> 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：</p>
+<ul>
+<li><a href="https://nodejs.org/" target="_blank" rel="external">Node.js</a></li>
+<li><a href="http://git-scm.com/" target="_blank" rel="external">Git</a></li>
+</ul>
+<h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><p>如果您的电脑中已经安装上述必备程序，那么接下来只需要使用 <code>npm</code> 即可完成 <code>Hexo</code> 的安装。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure>
+<p>如果您的电脑中尚未安装所需要的程序，请根据以下安装指示完成安装。</p>
+<h4 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h4><ul>
+<li><code>Windows</code>：下载并安装 <a href="https://code.google.com/hosting/moved?project=msysgit" target="_blank" rel="external">msysgit</a>.</li>
+<li><code>Mac</code>：使用 <a href="http://brew.sh/" target="_blank" rel="external">Homebrew</a>, <a href="http://www.macports.org/" target="_blank" rel="external">MacPorts</a> 或下载 <a href="https://code.google.com/p/git-osx-installer/" target="_blank" rel="external">安装程序</a> 安装。</li>
+<li><code>Linux</code> (<code>Ubuntu</code>, <code>Debian</code>)：<code>sudo apt-get install git-core</code></li>
+<li><code>Linux</code> (<code>Fedora</code>, <code>Red Hat</code>, <code>CentOS</code>)：<code>sudo yum install git-core</code></li>
+</ul>
+<h4 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h4><p>安装 <code>Node.js</code> 的最佳方式是使用 <a href="https://github.com/creationix/nvm" target="_blank" rel="external">nvm</a>。</p>
+<p><strong>cURL:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ curl https://raw.github.com/creationix/nvm/master/install.sh | sh</div></pre></td></tr></table></figure>
+<p><strong>Wget:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh</div></pre></td></tr></table></figure>
+<p>安装完成后，重启终端并执行下列命令即可安装 <code>Node.js</code>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ nvm install 0.10</div></pre></td></tr></table></figure>
+<p>或者您也可以下载 <a href="https://nodejs.org/" target="_blank" rel="external">应用程序</a> 来安装。</p>
+<h4 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h4><p>所有必备的应用程序安装完成后，即可使用 <code>npm</code> 安装 <code>Hexo</code>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure>
+<h2 id="开始使用"><a href="#开始使用" class="headerlink" title="开始使用"></a>开始使用</h2><p>安装 <code>Hexo</code> 完成后，请执行下列命令，<code>Hexo</code> 将会在指定文件夹中新建所需要的文件。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ hexo init blog</div><div class="line">$ cd blog</div><div class="line">$ npm install</div><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<h3 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h3><p>新建完成后，指定文件夹的目录如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">.</div><div class="line">├── _config.yml</div><div class="line">├── package.json</div><div class="line">├── scaffolds</div><div class="line">├── scripts</div><div class="line">├── source</div><div class="line">|   ├── _drafts</div><div class="line">|   └── _posts</div><div class="line">└── themes</div></pre></td></tr></table></figure>
+<h4 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a><code>_config.yml</code></h4><p>网站的 <a href="http://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="external">配置</a> 信息，您可以在此配置大部分的参数。</p>
+<h4 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a><code>package.json</code></h4><p>应用程序的信息。</p>
+<p><code>EJS</code>, <code>Stylus</code> 和 <code>Markdown renderer</code> 已默认安装，您可以自由移除。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">&#123;  </div><div class="line">  &quot;name&quot;: &quot;hexo-site&quot;,  </div><div class="line">  &quot;version&quot;: &quot;&quot;,  </div><div class="line">  &quot;private&quot;: true,  </div><div class="line">  &quot;hexo&quot;: &#123;  </div><div class="line">    &quot;version&quot;: &quot;&quot;  </div><div class="line">  &#125;,  </div><div class="line">  &quot;dependencies&quot;: &#123;  </div><div class="line">    &quot;hexo-renderer-ejs&quot;: &quot;*&quot;,  </div><div class="line">    &quot;hexo-renderer-stylus&quot;: &quot;*&quot;,  </div><div class="line">    &quot;hexo-renderer-marked&quot;: &quot;*&quot;  </div><div class="line">  &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="scaffolds"><a href="#scaffolds" class="headerlink" title="scaffolds"></a><code>scaffolds</code></h4><p><a href="http://wiki.jikexueyuan.com/project/hexo-document/writing.html" target="_blank" rel="external">模版</a> 文件夹。当您新建文章时，<code>Hexo</code> 会根据 <code>scaffold</code> 来建立文件。</p>
+<h4 id="scripts"><a href="#scripts" class="headerlink" title="scripts"></a><code>scripts</code></h4><p><a href="http://wiki.jikexueyuan.com/project/hexo-document/plugins.html" target="_blank" rel="external">脚本</a> 文件夹。脚本是扩展 <code>Hexo</code> 最简易的方式，在此文件夹内的 <code>JavaScript</code> 文件会被自动执行。</p>
+<h4 id="source"><a href="#source" class="headerlink" title="source"></a><code>source</code></h4><p>资源文件夹是存放用户资源的地方。除 <code>_posts</code> 文件夹之外，开头命名为 _ (下划线)的文件 / 文件夹和隐藏的文件将会被忽略。<code>Markdown</code> 和 <code>HTML</code> 文件会被解析并放到 <code>public</code> 文件夹，而其他文件会被拷贝过去。</p>
+<h4 id="themes"><a href="#themes" class="headerlink" title="themes"></a><code>themes</code></h4><p><a href="http://wiki.jikexueyuan.com/project/hexo-document/themes.html" target="_blank" rel="external">主题</a> 文件夹。Hexo 会根据主题来生成静态页面。</p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>您可以在 <code>_config.yml</code> 中修改大部份的配置。</p>
+<h4 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h4><p><code>title</code>: 网站标题<br><code>subtitle</code>: 网站副标题<br><code>description</code>: 网站描述<br><code>author</code>: 您的名字<br><code>language</code>: 网站使用的语言<br><code>timezone</code>: 网站时区。Hexo 预设使用您电脑的时区。<a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank" rel="external">时区列表</a></p>
+<h4 id="网址"><a href="#网址" class="headerlink" title="网址"></a>网址</h4><p><code>url</code>: 网址<br><code>root</code>: 网站根目录<br><code>permalink</code>: [<code>:year/:month/:day/:title/</code>] 文章的 <a href="http://wiki.jikexueyuan.com/project/hexo-document/permalinks.html" target="_blank" rel="external">永久链接</a> 格式<br><code>permalink_default</code>: 永久链接中各部分的默认值</p>
+<h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><p><code>source_dir</code>: [<code>source</code>] 资源文件夹，这个文件夹用来存放内容。<br><code>public_dir</code>: [<code>public</code>] 公共文件夹，这个文件夹用于存放生成的站点文件。<br><code>tag_dir</code>: [<code>tags</code>] 标签文件夹<br><code>archive_dir</code>    : [<code>archives</code>] 归档文件夹<br><code>category_dir</code>: [<code>categories</code>] 分类文件夹<br><code>code_dir</code>: [<code>downloads/code</code>] <code>Include code</code> 文件夹<br><code>i18n_dir</code>: [<code>:lang</code>] 国际化 <code>i18n</code> 文件夹<br><code>skip_render</code>    : 跳过指定文件的渲染，您可使用 <code>glob</code> 来配置路径。</p>
+<h4 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h4><p><code>new_post_name</code>: [<code>:title.md</code>] 新文章的文件名称<br><code>default_layout</code>: [<code>post</code>] 预设布局<br><code>auto_spacing</code>: [<code>false</code>] 在中文和英文之间加入空格<br><code>titlecase</code>: [<code>false</code>] 把标题转换为 title case<br><code>external_link</code>: [<code>true</code>] 在新标签中打开链接<br><code>filename_case</code>: [<code>0</code>] 把文件名称转换为 (1) 小写或 (2) 大写<br><code>render_drafts</code>: [<code>false</code>] 显示草稿<br><code>post_asset_folder</code>: [<code>false</code>] 启动 Asset 文件夹<br><code>relative_link</code>: [<code>false</code>] 把链接改为与根目录的相对位址<br><code>future</code>: [<code>true</code>] 显示未来的文章<br><code>highlight</code>: 代码块的设置</p>
+<h4 id="分类-amp-标签"><a href="#分类-amp-标签" class="headerlink" title="分类 &amp; 标签"></a>分类 &amp; 标签</h4><p><code>default_category</code>: [<code>uncategorized</code>] 默认分类<br><code>category_map</code>: 分类别名<br><code>tag_map</code>: 标签别名</p>
+<h4 id="日期-时间格式"><a href="#日期-时间格式" class="headerlink" title="日期 / 时间格式"></a>日期 / 时间格式</h4><p><code>Hexo</code> 使用 <code>Moment.js</code> 来解析和显示时间。</p>
+<p><code>date_format</code>: [<code>MMM D YYYY</code>] 日期格式<br><code>time_format</code>: [<code>H:mm:ss</code>] 时间格式</p>
+<h4 id="分页"><a href="#分页" class="headerlink" title="分页"></a>分页</h4><p><code>per_page</code>: [<code>10</code>] 每页显示的文章量 (0 = 关闭分页功能)<br><code>pagination_dir</code>: [<code>page</code>] 分页目录</p>
+<h4 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h4><p><code>theme</code>: 当前主题名称<br><code>deploy</code>: 部署</p>
+<h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><h4 id="init-初始化"><a href="#init-初始化" class="headerlink" title="init 初始化"></a><code>init</code> 初始化</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo init [folder]</div></pre></td></tr></table></figure>
+<p>新建一个网站。如果没有设置 <code>folder</code> ，<code>Hexo</code> 默认在目前的文件夹建立网站。</p>
+<h4 id="new-新建"><a href="#new-新建" class="headerlink" title="new 新建"></a><code>new</code> 新建</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new [layout] &lt;title&gt;</div></pre></td></tr></table></figure>
+<p>新建一篇文章。如果没有设置 <code>layout</code> 的话，默认使用 <code>_config.yml</code> 中的 <code>default_layout</code> 参数代替。如果标题包含空格的话，请使用引号括起来。</p>
+<p><strong>布局[layout]</strong></p>
+<p>您可以在命令中指定文章的布局(layout)，默认为 <code>post</code>，可以通过修改 <code>_config.yml</code> 中的 <code>default_layout</code> 参数来指定默认布局。</p>
+<p><code>Hexo</code> 有三种默认布局：<code>post</code>、<code>page</code> 和 <code>draft</code>，它们分别对应不同的路径，而您自定义的其他布局和 <code>post</code> 相同，都将储存到 <code>source/_posts</code> 文件夹。</p>
+<p><code>page</code>: <code>source/_posts</code><br><code>post</code>: <code>source</code><br><code>draft</code>: <code>source/_drafts</code></p>
+<h4 id="generate-生成静态文件"><a href="#generate-生成静态文件" class="headerlink" title="generate 生成静态文件"></a><code>generate</code> 生成静态文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>生成静态文件。</p>
+<p><code>-d</code>, <code>--deploy</code> 文件生成后立即部署网站<br><code>-w</code>, <code>--watch</code> 监视文件变动</p>
+<h4 id="publish-发布草稿"><a href="#publish-发布草稿" class="headerlink" title="publish 发布草稿"></a><code>publish</code> 发布草稿</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo publish [layout] &lt;filename&gt;</div></pre></td></tr></table></figure>
+<p>发表草稿。</p>
+<h4 id="server-本地服务器"><a href="#server-本地服务器" class="headerlink" title="server 本地服务器"></a><code>server</code> 本地服务器</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>启动服务器。</p>
+<p><code>-p</code>, <code>--port</code> 重设端口<br><code>-s</code>, <code>--static</code> 只使用静态文件<br><code>-l</code>, <code>--log</code> 启动日记记录，或覆盖记录格式</p>
+<h4 id="deploy-部署"><a href="#deploy-部署" class="headerlink" title="deploy 部署"></a><code>deploy</code> 部署</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>部署网站。</p>
+<p><code>-g</code>, <code>--generate</code> 部署网站前，需要预先生成静态文件</p>
+<h4 id="render-渲染文件"><a href="#render-渲染文件" class="headerlink" title="render 渲染文件"></a><code>render</code> 渲染文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo render &lt;file&gt; ...</div></pre></td></tr></table></figure>
+<p>渲染文件。</p>
+<p><code>-o</code>, <code>--output</code> 设置输出路径</p>
+<h4 id="clean-清除缓存"><a href="#clean-清除缓存" class="headerlink" title="clean 清除缓存"></a><code>clean</code> 清除缓存</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div></pre></td></tr></table></figure>
+<p>清除缓存文件(<code>db.json</code>)和已生成的静态文件(<code>public</code>)。</p>
+<h4 id="list-清除缓存"><a href="#list-清除缓存" class="headerlink" title="list 清除缓存"></a><code>list</code> 清除缓存</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo list &lt;type&gt;</div></pre></td></tr></table></figure>
+<p>列出网站信息。</p>
+<p><code>page</code>, <code>post</code>, <code>route</code>, <code>tag</code>, <code>category</code></p>
+<h4 id="version-显示版本"><a href="#version-显示版本" class="headerlink" title="version 显示版本"></a><code>version</code> 显示版本</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo version</div></pre></td></tr></table></figure>
+<p>显示 Hexo 版本。</p>
+<h4 id="migrate-迁移"><a href="#migrate-迁移" class="headerlink" title="migrate 迁移"></a><code>migrate</code> 迁移</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo migrate &lt;type&gt;</div></pre></td></tr></table></figure>
+<p>从其他系统 [迁移内容]</p>
+<h4 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h4><h5 id="安全模式"><a href="#安全模式" class="headerlink" title="安全模式"></a>安全模式</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo --safe</div></pre></td></tr></table></figure>
+<p>在安全模式下，不会载入插件和脚本。当您在安装新插件遭遇问题时，可以尝试以安全模式重新执行。</p>
+<h5 id="调试模式"><a href="#调试模式" class="headerlink" title="调试模式"></a>调试模式</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo --debug</div></pre></td></tr></table></figure>
+<p>在终端中显示调试信息并记录到 debug.log。</p>
+<h5 id="简洁模式"><a href="#简洁模式" class="headerlink" title="简洁模式"></a>简洁模式</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo --silent</div></pre></td></tr></table></figure>
+<p>隐藏终端信息。</p>
+<h5 id="自定义配置文件的路径"><a href="#自定义配置文件的路径" class="headerlink" title="自定义配置文件的路径"></a>自定义配置文件的路径</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo --config custom.yml</div></pre></td></tr></table></figure>
+<p>自定义配置文件的路径，执行后将不再使用 <code>_config.yml</code>。</p>
+<h5 id="显示草稿"><a href="#显示草稿" class="headerlink" title="显示草稿"></a>显示草稿</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo --draft</div></pre></td></tr></table></figure>
+<p>显示 <code>source/_drafts</code> 文件夹中的草稿文章。</p>
+<h5 id="自定义-CWD"><a href="#自定义-CWD" class="headerlink" title="自定义 CWD"></a>自定义 CWD</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo --cwd /path/to/cwd</div></pre></td></tr></table></figure>
+<p>自定义当前工作目录(<code>Current working directory</code>)的路径。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/20170626/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/HGEF3802.jpg"
+               alt="CaiHe Liu" />
+          <p class="site-author-name" itemprop="name">CaiHe Liu</p>
+           
+              <p class="site-description motion-element" itemprop="description">刘彩和, LiuCaiHe, 前端, PHP</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/LiuCaiHe" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="at@lang.so" target="_blank" title="Email">
+                  
+                    <i class="fa fa-fw fa-envelope"></i>
+                  
+                  Email
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://segmentfault.com/u/LiuCaiHe" target="_blank" title="Segmentfault">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  Segmentfault
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/liucaihe" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#特性"><span class="nav-number">1.</span> <span class="nav-text">特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装前必备"><span class="nav-number">2.1.</span> <span class="nav-text">安装前必备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-1"><span class="nav-number">2.2.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装-Git"><span class="nav-number">2.2.1.</span> <span class="nav-text">安装 Git</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装-Node-js"><span class="nav-number">2.2.2.</span> <span class="nav-text">安装 Node.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装-Hexo"><span class="nav-number">2.2.3.</span> <span class="nav-text">安装 Hexo</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开始使用"><span class="nav-number">3.</span> <span class="nav-text">开始使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#目录结构"><span class="nav-number">3.1.</span> <span class="nav-text">目录结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#config-yml"><span class="nav-number">3.1.1.</span> <span class="nav-text">_config.yml</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#package-json"><span class="nav-number">3.1.2.</span> <span class="nav-text">package.json</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#scaffolds"><span class="nav-number">3.1.3.</span> <span class="nav-text">scaffolds</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#scripts"><span class="nav-number">3.1.4.</span> <span class="nav-text">scripts</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#source"><span class="nav-number">3.1.5.</span> <span class="nav-text">source</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#themes"><span class="nav-number">3.1.6.</span> <span class="nav-text">themes</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置"><span class="nav-number">3.2.</span> <span class="nav-text">配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#网站"><span class="nav-number">3.2.1.</span> <span class="nav-text">网站</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#网址"><span class="nav-number">3.2.2.</span> <span class="nav-text">网址</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#目录"><span class="nav-number">3.2.3.</span> <span class="nav-text">目录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文章"><span class="nav-number">3.2.4.</span> <span class="nav-text">文章</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分类-amp-标签"><span class="nav-number">3.2.5.</span> <span class="nav-text">分类 & 标签</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#日期-时间格式"><span class="nav-number">3.2.6.</span> <span class="nav-text">日期 / 时间格式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分页"><span class="nav-number">3.2.7.</span> <span class="nav-text">分页</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#扩展"><span class="nav-number">3.2.8.</span> <span class="nav-text">扩展</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#命令"><span class="nav-number">3.3.</span> <span class="nav-text">命令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#init-初始化"><span class="nav-number">3.3.1.</span> <span class="nav-text">init 初始化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#new-新建"><span class="nav-number">3.3.2.</span> <span class="nav-text">new 新建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#generate-生成静态文件"><span class="nav-number">3.3.3.</span> <span class="nav-text">generate 生成静态文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#publish-发布草稿"><span class="nav-number">3.3.4.</span> <span class="nav-text">publish 发布草稿</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#server-本地服务器"><span class="nav-number">3.3.5.</span> <span class="nav-text">server 本地服务器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#deploy-部署"><span class="nav-number">3.3.6.</span> <span class="nav-text">deploy 部署</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#render-渲染文件"><span class="nav-number">3.3.7.</span> <span class="nav-text">render 渲染文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#clean-清除缓存"><span class="nav-number">3.3.8.</span> <span class="nav-text">clean 清除缓存</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#list-清除缓存"><span class="nav-number">3.3.9.</span> <span class="nav-text">list 清除缓存</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#version-显示版本"><span class="nav-number">3.3.10.</span> <span class="nav-text">version 显示版本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#migrate-迁移"><span class="nav-number">3.3.11.</span> <span class="nav-text">migrate 迁移</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#选项"><span class="nav-number">3.3.12.</span> <span class="nav-text">选项</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#安全模式"><span class="nav-number">3.3.12.1.</span> <span class="nav-text">安全模式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#调试模式"><span class="nav-number">3.3.12.2.</span> <span class="nav-text">调试模式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#简洁模式"><span class="nav-number">3.3.12.3.</span> <span class="nav-text">简洁模式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#自定义配置文件的路径"><span class="nav-number">3.3.12.4.</span> <span class="nav-text">自定义配置文件的路径</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#显示草稿"><span class="nav-number">3.3.12.5.</span> <span class="nav-text">显示草稿</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#自定义-CWD"><span class="nav-number">3.3.12.6.</span> <span class="nav-text">自定义 CWD</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">CaiHe Liu</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
