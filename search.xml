@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <url>%2F2017-06-26%2Fhello-world%2F</url>
+    <url>%2F20170626%2Fhello-world%2F</url>
     <content type="text"><![CDATA[欢迎来到Hexo! 这是你的第一篇文章。查看documentation以获取更多信息。如果在使用Hexo时遇到任何问题，您可以在troubleshooting中找到答案，或者您可以在GitHub上询问我。 快速开始创建一个新的帖子1$ hexo new "My New Post" 更多信息: Writing 运行服务器1$ hexo server 更多信息: Server 生成静态文件1$ hexo generate 更多信息: Generating 部署到远程站点1$ hexo deploy 更多信息: Deployment]]></content>
   </entry>
 </search>
