@@ -4,9 +4,9 @@
   <subtitle>生命不息, 折腾不止</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://liucaihe.github.io/"/>
   <updated>2017-06-26T12:20:27.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://liucaihe.github.io/</id>
   
   <author>
     <name>CaiHe Liu</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2017/06/26/hello-world/"/>
-    <id>http://yoursite.com/2017/06/26/hello-world/</id>
+    <link href="http://liucaihe.github.io/2017-06-26/hello-world/"/>
+    <id>http://liucaihe.github.io/2017-06-26/hello-world/</id>
     <published>2017-06-26T10:31:13.000Z</published>
     <updated>2017-06-26T12:20:27.000Z</updated>
     
