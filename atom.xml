@@ -51,4 +51,42 @@
     
   </entry>
   
+  <entry>
+    <title>Git 团队协作最佳实践</title>
+    <link href="http://liucaihe.github.io/20160528/git-teamwork-best-practices/"/>
+    <id>http://liucaihe.github.io/20160528/git-teamwork-best-practices/</id>
+    <published>2016-05-28T06:01:04.000Z</published>
+    <updated>2017-06-28T09:27:22.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;规范使用-GIT&quot;&gt;&lt;a href=&quot;#规范使用-GIT&quot; class=&quot;headerlink&quot; title=&quot;规范使用 GIT&quot;&gt;&lt;/a&gt;规范使用 GIT&lt;/h1&gt;&lt;p&gt;实际开发中，如果团队成员比较多，开发迭代频繁，对Git的应用比较混乱，会产生很多不必要的冲突等等。&lt;/p&gt;
+&lt;p&gt;Master(主) 分支&lt;br&gt;Hotfix(补丁) 分支&lt;br&gt;Develop(开发) 分支&lt;br&gt;    主开发分支, 包含所有要发布到下一个&lt;br&gt;Feature(功能) 分支&lt;br&gt;Release(发布) 分支&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://liucaihe.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MAC tree 命令详解</title>
+    <link href="http://liucaihe.github.io/20150429/tree-command-annotation/"/>
+    <id>http://liucaihe.github.io/20150429/tree-command-annotation/</id>
+    <published>2015-04-29T03:18:50.000Z</published>
+    <updated>2017-06-29T04:11:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;MAC&lt;/code&gt; 下默认没有 &lt;code&gt;tree&lt;/code&gt; 命令, 不过可以使用 &lt;code&gt;find&lt;/code&gt; 命令模拟出 &lt;code&gt;tree&lt;/code&gt; 命令的效果:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;# 显示当前目录&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ find . -print | sed -e &amp;apos;s;[^/]*/;|——;g; s;——|; |;g&amp;apos;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;设置别名快速执行该命令&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ cd ~&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ vim .bash_profile&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;# 在 .bash_profile 内写入以下命令, 保存并退出&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ alias tree=&amp;quot;find . -print | sed -e &amp;apos;s;[^/]*/;|——;g; s;——|; |;g&amp;apos;&amp;quot;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;# 直接运行 tree 命令&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ tree&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;除了使用 &lt;code&gt;find&lt;/code&gt; 模拟 &lt;code&gt;tree&lt;/code&gt; 外, 还可以使用 &lt;code&gt;homebrew&lt;/code&gt; 安装 &lt;code&gt;tree&lt;/code&gt; 命令。&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
 </feed>
